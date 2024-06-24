@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Scheduler</title>
+    <link rel="stylesheet" href="MockTest.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Appointment Scheduler</h1>
+        <div id="bookingForm">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <label for="service">Select Service:</label>
+                <select id="service" name="service">
+                    <option value="none">Select a Service</option>
+                    <option value="haircut">Haircut:Rs.120</option>
+                    <option value="massage">Massage:Rs.90</option>
+                    <option value="manicure">Manicure:Rs240</option>
+                </select>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+        <div id="managementSection">
+            <h2>Appointment Management</h2>
+            <div id="appointmentsList">
+            </div>
+        </div>
+    </div>
+
+    <script src="MockTest.js"></script>
+</body>
+</html>
